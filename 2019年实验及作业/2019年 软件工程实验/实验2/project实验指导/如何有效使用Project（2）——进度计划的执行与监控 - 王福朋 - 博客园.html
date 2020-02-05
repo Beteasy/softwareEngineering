@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://www.cnblogs.com/wangfupeng1988/p/3648994.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/bundle-darkgreentrip.css">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/bundle-darkgreentrip-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/wangfupeng1988/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/wangfupeng1988/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/wangfupeng1988/wlwmanifest.xml">
+<script async="" src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/analytics.js"></script><script src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'wangfupeng1988', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/blog-common.js" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/wangfupeng1988/"><img id="blogLogo" src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/wangfupeng1988/">王福朋 - 博客园</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/wangfupeng1988/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E7%8E%8B%E7%A6%8F%E6%9C%8B">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/wangfupeng1988/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/wangfupeng1988/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 137&nbsp; </span>
+<span id="stats_article_count">文章 - 1&nbsp; </span>
+<span id="stats-comment_count">评论 - 2343</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html">如何有效使用Project（2）——进度计划的执行与监控</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p>继上次的的《<a href="http://www.cnblogs.com/wangfupeng1988/p/3647166.html" target="_blank">编制进度计划、保存基准</a>》继续讲解如何对计划进行执行和监控。</p>
+<p>计划执行即：反馈实际进度、反馈工作消耗（本文只考虑工时，不考虑成本）、提出计划变更请求。如果你的企业实施了专门的PM系统，那么这些工作应该是各个执行人员分头反馈，但是如果用Project，那么就得劳驾项目经理同志去挨个手动填写了，哈哈苦B的项目经理！</p>
+<p>计划监控有许多种方式，针对不通过的项目角色，可以提供不同的计划监控图表，特别是在项目组合管理中，更是繁多。本文只考虑单项目管理，用Project可以做到的计划监控，无非就是进度监控和资源监控。其实这两个，也是做重要的。</p>
+<p>好了，就此开始：</p>
+<h1><strong><span style="font-family: 黑体;">1.执行</span></strong></h1>
+<p><strong>1.1 单个任务执行</strong></p>
+<p>在一般情况下，需要对项目正在执行的每个任务进行定期更新。</p>
+<p>需要在Project中加入“完成百分比”、“实际工期”、“工时完成百分比”、“工时”、“实际工时”这些列<span style="background-color: #ffff00;">。其实这里的“完成百分比”就是工期完成百分比</span>。</p>
+<p>更新任务时，一般需要在“完成百分比”中输入实际的百分比，然后Project会自动计算实际工期、实际工时和工时完成百分比。</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/061732139549750.png" alt=""></p>
+<p><span style="background-color: #ffff00;">这里需要注意：Project自动将“完成百分比”和“工时完成百分比”想关联，即Project默认为，经过了多少工期，就相当于完成了多少工作量</span>。但有时候不是这样的，就需要去掉这个关联。在Project 的“选项 - 日程”中，去掉“”的勾选即可实现分离。</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/061735027829938.png" alt=""></p>
+<p>分离之后，工期和工时将没有关系，需要自己手动填写。</p>
+<p>&nbsp;</p>
+<p><strong>1.2 整体更新项目进展</strong></p>
+<p>在极少数的理想情况下，项目执行进度和项目计划的进度一样，则可以使用统一更新的功能。</p>
+<p>在Project 2010中可在“项目 - 更新项目”菜单中打开这一功能：</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/061744227663995.png" alt=""></p>
+<p>更新后，项目的时间线也会随之变化，而且相关的各个任务都会按照理想的状态更新进度和资源情况。</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/061745083919889.png" alt=""></p>
+<p>&nbsp;</p>
+<p><strong>1.3 提出计划变更</strong></p>
+<p>提出计划变更很简单，只需要修改计划的工期即可。这可能会给后置任务带来影响，至于如何识别以及处理这些影响，我们下文介绍。</p>
+<p>&nbsp;</p>
+<h1><span style="font-family: 黑体;"><strong>2. 监控</strong></span></h1>
+<p><strong>2.1 监控进度</strong></p>
+<p>对于当前进度的简单监控，在默认的甘特图视图中查看即可。其实对进度监控的主要工作还是监控计划变更。</p>
+<p>&nbsp;</p>
+<p><strong>2.2 监控变更</strong></p>
+<p><em>2.2.1 查看“总浮时”，保证项目进度计划的合理性：</em></p>
+<p>在编制项目进度计划时已经提到，由于里程碑的约束，可能会导致任务的“总浮时”为负值。这里也一样，任务的工期可能因为变更而被修改，但是里程碑是受约束的，不会变。</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/051334070467837.png" alt="" width="1137" height="145"></p>
+<p>如果出现了以上情况，就说明项目进度计划由于变更而不再合理，需要调整。</p>
+<p>如何调整在上文中已经提到，可以去参考：<a href="http://www.cnblogs.com/wangfupeng1988/p/3647166.html" target="_blank">http://www.cnblogs.com/wangfupeng1988/p/3647166.html</a></p>
+<p>&nbsp;</p>
+<p><em>2.2.2 用比较基准：</em></p>
+<p>进入【跟踪甘特图】视图，可以看到右侧甘特图中有两层</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/061826589542165.png" alt=""></p>
+<p>其中，上层是实际的计划，下层是之前保存的比较基准。通过这里比较，就可以看到，当前实际的计划和之前保存的基准有什么差异。</p>
+<p>当然，如果想看具体的数据，可以把基准的数据添加到列中。如要看完成时间的差异，可以这样看：</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/061829378606817.png" alt=""></p>
+<p>从上图中看到，时间差异是负值，说明计划将提前完成。如果这里的差异是正数，那么就要小心了，计划可能要延期。</p>
+<p>&nbsp;</p>
+<p><strong>2.3 监控资源</strong></p>
+<p>监控资源可以通过【资源使用状况】和【任务分配状况】两个视图进行查看。</p>
+<p>在【资源使用状况】中，添加“实际工时”和“累计工时”两列</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/061816197825468.png" alt=""></p>
+<p>就可以查看一个资源在不同工作下的分配工时、实际工时和累计工时，效果如下：</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/061817175479254.png" alt=""></p>
+<p>&nbsp;</p>
+<p>在【工作分配状况】视图中，也可以查看每个任务的分配工时、实际工时和累计工时。</p>
+<p><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/061819427669989.png" alt=""></p>
+<p>&nbsp;</p>
+<p>这两个视图，其实从不同的维度来统计资源消耗，一个是从资源角度，一个是从工作分解结构的角度。</p>
+<p>&nbsp;</p>
+<h1><strong><span style="font-family: 黑体;">3. 总结：</span></strong></h1>
+<p>Project是一个很强大的软件，功能很多，本文只介绍了它最常用最有效的功能。根据8/2原则，这20%的功能，即可解决工作中80%的问题。</p>
+<p>希望大家，尤其是各位项目经理，善用这个工具。</p>
+<p>&nbsp;</p>
+<p>另外，微软Office中的word、excel、ppt已经被金山WPS翻版的很成功了，而工作中常用的Project和visio至今都没见着，很遗憾。</p>
+<p>后期我可能会尝试做一个Project的PM软件，做BS、分角色的，也很期待各位同仁有兴趣者能做出一个给大家提供帮助。</p>
+<p>&nbsp;</p>
+<p>Project的简单分析先到这里吧，以后若有时间再针对一些Project的知识另作分享！</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/wangfupeng1988/tag/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">项目管理</a>, <a href="http://www.cnblogs.com/wangfupeng1988/tag/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86/">项目经理</a>, <a href="http://www.cnblogs.com/wangfupeng1988/tag/%E8%BF%9B%E5%BA%A6%E8%AE%A1%E5%88%92/">进度计划</a>, <a href="http://www.cnblogs.com/wangfupeng1988/tag/PM/">PM</a>, <a href="http://www.cnblogs.com/wangfupeng1988/tag/Project/">Project</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(3648994,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;b23cbd90-9e70-df11-ba8f-001cf0cd104b&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/wangfupeng1988/" target="_blank"><img src="./如何有效使用Project（2）——进度计划的执行与监控 - 王福朋 - 博客园_files/20140923142153.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/wangfupeng1988/">王福朋</a><br>
+            <a href="http://home.cnblogs.com/u/wangfupeng1988/followees">关注 - 15</a><br>
+            <a href="http://home.cnblogs.com/u/wangfupeng1988/followers">粉丝 - 3188</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;b23cbd90-9e70-df11-ba8f-001cf0cd104b&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(3648994,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">9</span>
+    </div>
+    <div class="buryit" onclick="votePost(3648994,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/wangfupeng1988/p/3647166.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/wangfupeng1988/p/3647166.html" title="发布于2014-04-05 13:45">如何有效使用Project（1）——编制进度计划、保存基准</a><br><a href="http://www.cnblogs.com/wangfupeng1988/p/3655310.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/wangfupeng1988/p/3655310.html" title="发布于2014-04-09 22:19">“声讨”高云的《jQuery技术内幕》</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2014-04-06 18:37</span> <a href="http://www.cnblogs.com/wangfupeng1988/">王福朋</a> 阅读(<span id="post_view_count">41727</span>) 评论(<span id="post_comment_count">7</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=3648994" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#" onclick="AddToWz(3648994);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=76089,cb_entryId=3648994,cb_blogApp=currentBlogApp,cb_blogUserGuid='b23cbd90-9e70-df11-ba8f-001cf0cd104b',cb_entryCreatedDate='2014/4/6 18:37:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#2912290" class="layer">#1楼</a><a name="2912290" id="comment_anchor_2912290"></a>  <span class="comment_date">2014-04-06 22:01</span> <a id="a_comment_author_2912290" href="http://www.cnblogs.com/chinhi/" target="_blank">Suzuki.kakeru</a> <a href="http://msg.cnblogs.com/send/Suzuki.kakeru" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2912290" class="blog_comment_body">lz<br><br><br>我用<a href="http://10086bank.com/%E9%87%8C%E9%9D%A2%E7%9A%84%E4%BA%91%E6%97%A5%E7%A8%8B" target="_blank">http://10086bank.com/里面的云日程</a>  我自己做的  还有android端</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2912290,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2912290,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2912290_avatar" style="display:none;">http://pic.cnblogs.com/face/400991/20140410214544.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#2912293" class="layer">#2楼</a><a name="2912293" id="comment_anchor_2912293"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-04-06 22:09</span> <a id="a_comment_author_2912293" href="http://www.cnblogs.com/wangfupeng1988/" target="_blank">王福朋</a> <a href="http://msg.cnblogs.com/send/%E7%8E%8B%E7%A6%8F%E6%9C%8B" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2912293" class="blog_comment_body"><a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#2912290" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2912290);">@</a>
+Suzuki.kakeru<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#2912290" title="查看引用原文">引用</a></legend>lz<br><br><br>我用http://10086bank.com/里面的云日程  我自己做的  还有android端</fieldset><br>好，我看看先！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2912293,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2912293,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2912293_avatar" style="display:none;">http://pic.cnblogs.com/face/138012/20140923142153.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#2912294" class="layer">#3楼</a><a name="2912294" id="comment_anchor_2912294"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-04-06 22:11</span> <a id="a_comment_author_2912294" href="http://www.cnblogs.com/wangfupeng1988/" target="_blank">王福朋</a> <a href="http://msg.cnblogs.com/send/%E7%8E%8B%E7%A6%8F%E6%9C%8B" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2912294" class="blog_comment_body"><a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#2912290" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2912290);">@</a>
+Suzuki.kakeru<br>这个日程挺好的，类似于Google日历，适合于个人工作的安排。但是它无法满足项目进度计划管理的要求。不过，Project中也有这样的日历的表述形式。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2912294,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2912294,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2912294_avatar" style="display:none;">http://pic.cnblogs.com/face/138012/20140923142153.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#3119457" class="layer">#4楼</a><a name="3119457" id="comment_anchor_3119457"></a>  <span class="comment_date">2015-01-30 10:42</span> <a id="a_comment_author_3119457" href="http://home.cnblogs.com/u/719425/" target="_blank">项目管理小白</a> <a href="http://msg.cnblogs.com/send/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B0%8F%E7%99%BD" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3119457" class="blog_comment_body">写的很好，希望能做一个由各个部门分计划汇总到一起的总计划表</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3119457,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3119457,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#3253987" class="layer">#5楼</a><a name="3253987" id="comment_anchor_3253987"></a>  <span class="comment_date">2015-08-25 16:37</span> <a id="a_comment_author_3253987" href="http://www.cnblogs.com/hxsyl/" target="_blank">火星十一郎</a> <a href="http://msg.cnblogs.com/send/%E7%81%AB%E6%98%9F%E5%8D%81%E4%B8%80%E9%83%8E" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3253987" class="blog_comment_body">期待 分析 算法 比如 如何联动 任务拆分 如何实现等等</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3253987,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3253987,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3253987_avatar" style="display:none;">http://pic.cnblogs.com/face/387014/20161102160518.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#3531072" class="layer">#6楼</a><a name="3531072" id="comment_anchor_3531072"></a>  <span class="comment_date">2016-10-14 11:29</span> <a id="a_comment_author_3531072" href="http://www.cnblogs.com/yinxingyeye/" target="_blank">银杏叶儿</a> <a href="http://msg.cnblogs.com/send/%E9%93%B6%E6%9D%8F%E5%8F%B6%E5%84%BF" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3531072" class="blog_comment_body">挺好，支持</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3531072,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3531072,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#3700663" class="layer">#7楼</a><a name="3700663" id="comment_anchor_3700663"></a><span id="comment-maxId" style="display:none;">3700663</span><span id="comment-maxDate" style="display:none;">2017/5/25 14:37:37</span>  <span class="comment_date">2017-05-25 14:37</span> <a id="a_comment_author_3700663" href="http://home.cnblogs.com/u/318611/" target="_blank">FreemanLS</a> <a href="http://msg.cnblogs.com/send/FreemanLS" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3700663" class="blog_comment_body">2个教程都看了，非常实用，谢谢博主了。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3700663,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3700663,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/wangfupeng1988/p/3648994.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/582318/" target="_blank">看我如何发现谷歌漏洞跟踪管理平台漏洞获得$15600赏金</a><br> ·  <a href="http://news.cnblogs.com/n/582317/" target="_blank">Uber CEO：执掌公司两个月后，我制定了全新的文化规范</a><br> ·  <a href="http://news.cnblogs.com/n/582316/" target="_blank">老牌P2P平台拍拍贷成功登陆纽交所 开盘涨2.3%</a><br> ·  <a href="http://news.cnblogs.com/n/582315/" target="_blank">微软Office 365个人版订阅价限时降至199元</a><br> ·  <a href="http://news.cnblogs.com/n/582314/" target="_blank">菜鸟双11将上线多款末端配送机器人 并发布新机器人基普拉斯</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="cnblogs_c2" class="c_ad_block"></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/563790/" target="_blank">关于编程，你的练习是不是有效的？</a><br> ·  <a href="http://kb.cnblogs.com/page/581467/" target="_blank">改善程序员生活质量的 3+10 习惯</a><br> ·  <a href="http://kb.cnblogs.com/page/568841/" target="_blank">NASA的10条代码编写原则</a><br> ·  <a href="http://kb.cnblogs.com/page/578502/" target="_blank">为什么你参加了那么多培训，却依然表现平平？</a><br> ·  <a href="http://kb.cnblogs.com/page/579832/" target="_blank">写给初学前端工程师的一封信</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/wangfupeng1988/">王福朋</a><br>园龄：<a href="http://home.cnblogs.com/u/wangfupeng1988/" title="入园时间：2010-06-05">7年5个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/wangfupeng1988/followers/">3188</a><br>关注：<a href="http://home.cnblogs.com/u/wangfupeng1988/followees/">15</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;b23cbd90-9e70-df11-ba8f-001cf0cd104b&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/10/01&#39;);return false;">&lt;</a></td><td align="center">2017年11月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/12/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td class="CalWeekendDay" align="center">4</td></tr><tr><td class="CalWeekendDay" align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center">9</td><td align="center">10</td><td class="CalTodayDay" align="center">11</td></tr><tr><td class="CalWeekendDay" align="center">12</td><td align="center">13</td><td align="center">14</td><td align="center">15</td><td align="center">16</td><td align="center">17</td><td class="CalWeekendDay" align="center">18</td></tr><tr><td class="CalWeekendDay" align="center">19</td><td align="center">20</td><td align="center">21</td><td align="center">22</td><td align="center">23</td><td align="center">24</td><td class="CalWeekendDay" align="center">25</td></tr><tr><td class="CalWeekendDay" align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center">29</td><td align="center">30</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td></tr><tr><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td><td class="CalOtherMonthDay" align="center">9</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/wangfupeng1988/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block">
+<div class="catListTag">
+<h3 class="catListTitle">我的标签</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/wangfupeng1988/tag/javascript/">javascript</a>(51)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/%E5%8E%9F%E5%9E%8B/">原型</a>(20)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/%E5%8E%9F%E5%9E%8B%E9%93%BE/">原型链</a>(20)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/%E4%BD%9C%E7%94%A8%E5%9F%9F/">作用域</a>(20)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/">作用域链</a>(20)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/wangEditor/">wangEditor</a>(18)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/">富文本编辑器</a>(18)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/css/">css</a>(13)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/css%E7%9F%A5%E5%A4%9A%E5%B0%91/">css知多少</a>(11)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/petshop4.0/">petshop4.0</a>(11)</li><li><a href="http://www.cnblogs.com/wangfupeng1988/tag/">更多</a></li>
+</ul>
+</div></div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/wangfupeng1988/category/652232.html">css知多少(12)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/wangfupeng1988/category/564238.html">javascript便签笔记系列(15)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/wangfupeng1988/category/643425.html">wangEditor使用手册(12)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/wangfupeng1988/archive/2017/03.html">2017年3月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/wangfupeng1988/archive/2016/07.html">2016年7月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="http://www.cnblogs.com/wangfupeng1988/archive/2016/03.html">2016年3月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/12.html">2015年12月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/11.html">2015年11月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_5" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/09.html">2015年9月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_6" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/08.html">2015年8月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_7" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/07.html">2015年7月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_8" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/06.html">2015年6月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_9" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/05.html">2015年5月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_10" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/03.html">2015年3月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_11" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/02.html">2015年2月 (6)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_12" href="http://www.cnblogs.com/wangfupeng1988/archive/2015/01.html">2015年1月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_13" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/12.html">2014年12月 (8)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_14" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/11.html">2014年11月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_15" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/10.html">2014年10月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_16" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/09.html">2014年9月 (23)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_17" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/08.html">2014年8月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_18" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/07.html">2014年7月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_19" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/06.html">2014年6月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_20" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/05.html">2014年5月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_21" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/04.html">2014年4月 (9)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_22" href="http://www.cnblogs.com/wangfupeng1988/archive/2014/03.html">2014年3月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_23" href="http://www.cnblogs.com/wangfupeng1988/archive/2012/05.html">2012年5月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_24" href="http://www.cnblogs.com/wangfupeng1988/archive/2012/03.html">2012年3月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_25" href="http://www.cnblogs.com/wangfupeng1988/archive/2011/12.html">2011年12月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_26" href="http://www.cnblogs.com/wangfupeng1988/archive/2011/10.html">2011年10月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_27" href="http://www.cnblogs.com/wangfupeng1988/archive/2011/08.html">2011年8月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_28" href="http://www.cnblogs.com/wangfupeng1988/archive/2011/07.html">2011年7月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_29" href="http://www.cnblogs.com/wangfupeng1988/archive/2011/05.html">2011年5月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_30" href="http://www.cnblogs.com/wangfupeng1988/archive/2011/04.html">2011年4月 (7)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_31" href="http://www.cnblogs.com/wangfupeng1988/archive/2011/03.html">2011年3月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_32" href="http://www.cnblogs.com/wangfupeng1988/archive/2011/02.html">2011年2月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_33" href="http://www.cnblogs.com/wangfupeng1988/archive/2011/01.html">2011年1月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_34" href="http://www.cnblogs.com/wangfupeng1988/archive/2010/10.html">2010年10月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_35" href="http://www.cnblogs.com/wangfupeng1988/archive/2010/09.html">2010年9月 (6)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wangfupeng1988/p/3994950.html#3835144">1. Re:深入理解javascript原型和闭包（16）——完结</a></li>
+        <li class="recent_comment_body">@GR07欢迎来 这里打赏...</li>
+        <li class="recent_comment_author">--王福朋</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wangfupeng1988/p/3978131.html#3834971">2. Re:深入理解javascript原型和闭包（3）——prototype原型</a></li>
+        <li class="recent_comment_body">说的很好，不过应该是继typeof之后的另一位老朋友</li>
+        <li class="recent_comment_author">--poyaojiye</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wangfupeng1988/p/3994950.html#3834967">3. Re:深入理解javascript原型和闭包（16）——完结</a></li>
+        <li class="recent_comment_body">看第一遍是6个月前 将巴理解50% <br>看第二遍是3个月前  差不多70%<br>如今第三遍里面的所有概念都清楚了 而且基本每篇10分钟内就看完了<br>不多说 留卡号吧 想简单粗暴的意思下</li>
+        <li class="recent_comment_author">--GR07</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wangfupeng1988/p/3977987.html#3832620">4. Re:深入理解javascript原型和闭包（1）——一切都是对象</a></li>
+        <li class="recent_comment_body">@初心不负@daidongdong 不能, 因为都返回false"abc" instanceof Object"abc" instanceof String值类型浏览器可能做了特殊处理, 具体的我还不......</li>
+        <li class="recent_comment_author">--WeiApple</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/wangfupeng1988/p/3994950.html#3829159">5. Re:深入理解javascript原型和闭包（16）——完结</a></li>
+        <li class="recent_comment_body">写得很好，简练精辟</li>
+        <li class="recent_comment_author">--坑爹的概率</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/wangfupeng1988/p/4649709.html">1. 自己总结的web前端知识体系大全【欢迎补充】(132705)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/3977924.html">2. 深入理解javascript原型和闭包（完结）(110675)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/3977987.html">3. 深入理解javascript原型和闭包（1）——一切都是对象(68298)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/4129500.html">4. 请用fontAwesome代替网页icon小图标(64097)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/4001284.html">5. 深入理解javascript原型和闭包系列(57277)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/wangfupeng1988/p/3994950.html">1. 深入理解javascript原型和闭包（16）——完结(124)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/3943389.html">2. 来给罗永浩和王自如打个分（上）(112)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/archive/2010/09/18/1830467.html">3. 写给自学asp.net的年轻人，特别是大学生(111)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/4366994.html">4. 我为什么要做富文本编辑器【wangEditor5个月总结】(106)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/4649709.html">5. 自己总结的web前端知识体系大全【欢迎补充】(95)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/wangfupeng1988/p/4001284.html">1. 深入理解javascript原型和闭包系列(206)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/4561993.html">2. 【前端福利】用grunt搭建自动化的web前端开发环境-完整教程(165)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/4649709.html">3. 自己总结的web前端知识体系大全【欢迎补充】(156)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/archive/2011/12/26/2302216.html">4. 【轻松学排序算法】眼睛直观感受几种常用排序算法(151)</a></li><li><a href="http://www.cnblogs.com/wangfupeng1988/p/3977924.html">5. 深入理解javascript原型和闭包（完结）(128)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2017 王福朋
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+</body></html>
